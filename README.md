@@ -78,26 +78,52 @@ Some JavaScript code
 ```
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
+It looks like comments are usually on a separate line and the characters "//" proceed a comment for each line. 
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 
+
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
+
+alert() and console.log() are the two functions that seem to be similar to the print function. alert() would be used to create a pop-up box with the elements you want displayed and console.log is better for debugging, so while coding this woul dbe more useful.
+(source: https://www.w3schools.com/js/js_output.asp)
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 
+You would have to comment out "alert("hello")". Then make a text box appear with the current date/time, you don't need to do anything because a text box with that information already exists. 
+
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
+In the displayInformation function definiton, replace document.querySelector('h1').innerHTML = "A name" with document.querySelector('h1').innerHTML = "Priya". Then my name, Priya, shows up in the header. 
+
 * **What does the word `document` represent in this code? Explain briefly.**
+
+I believe the word document refers to the HTML document this code resides in. For example, document.querySelector('h1').innerHTML means within this document, select the 'h1' tag, etc. I guess another way to say this is the HTML document is treated like an object. 
 
 * **What is happening in line 12 ( 
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
+This line is asking the script to count how many bulleted points there are in the list and assign the variable "item" to the body of the page, specifically for line 58. That way the page will display "9" after "The number of list items for this page:"
+
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
+
+The background color would be white with the text boxes being gray. 
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
+The style block in the HTML document indicates that the border color should be white for these grey boxes. you could change the color of the border by choosing a different hex code to replace #FFFFFF in line 38. 
+
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+
+I followed the University of Michigan/Go Blue example to create a new function that looked like this: 
+
+```js
+function copyFunction2(){
+		document.querySelector('#cheer').innerHTML += "O Canada<br>"
+	}
+```
+ and then, in line 69 I added "oncopy="copyFunction2()" to the <li> tag. 
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -112,11 +138,21 @@ function handleClick(){
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
 
-
+So the handleClick function sets up what happens when you click the button - "hello" pops up. Later on, the button is created, with the function called in the <button> tag. This ensures that 1. the button is displayed 2. the pop up appears when the button is clicked. 
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
 
+```js
+function handleClick2(){
+	alert("March 20, 2019");
+}
+```
+and later on
 
+```js
+<button onclick=handleClick2() id="spring-button">Spring Equinox 2019</button>
+```
+For this I used the Wow button as an example and created the spring button with the code above. 
 
 ### The next few questions address the `jquerylib_submit_example.html` file.
 
