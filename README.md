@@ -160,11 +160,19 @@ For this I used the Wow button as an example and created the spring button with 
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
 
+In lines 7-14 the style block specifies that if an entry is good, the color of that word should be blue but if the entry is invalid/causes an error, the color should be red. 
+
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+
+The line helps specify that the valid characters for this variable are only lower and upper case alphabetical characters. (We talked about it in SI 618)
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
+There are a few small differences, instead of a "if/elif/else" format, the if/else statements use the words "if", "else if" and "else". Also, instead of a ":" after the conditional, curly brackets enclose the code that says what you want the program to do if the condition is/is not met. In addition, the conditions are enclose in () in Javascript. 
+
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+
+The word fades out pretty fast so I would say the "10000" refers to the number of miliseconds it should take for the word to fade out. 
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
@@ -176,3 +184,5 @@ $(document).ready(function(){
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
+
+See my file for this answer. Thanks!
