@@ -82,6 +82,7 @@ It looks like comments are usually on a separate line and the characters "//" pr
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 
+You need to define functions in the script beforehand, which makes a page dynamic. Then you must define the front-end aspects of the page such as style and content. 
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
 
