@@ -182,6 +182,7 @@ $(document).ready(function(){
     $("form").submit(function(event){
 ```
 
+I'm not sure I completely umderstand, but I believe that this code is setting up the page via the HTML document. This code is making sure the page is ready with the form function, and that any user can submit to the form on the page. 
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
