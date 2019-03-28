@@ -124,7 +124,7 @@ function copyFunction2(){
 		document.querySelector('#cheer').innerHTML += "O Canada<br>"
 	}
 ```
- and then, in line 69 I added "oncopy="copyFunction2()" to the <li> tag. 
+ and then, in line 69 I added "oncopy="copyFunction2()" to the '<li>' tag. 
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
